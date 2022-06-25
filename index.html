@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- import css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- import javascript -->
+    <script src="./app.js" defer></script>
+    <script src="./data.json"></script>
+
+    <!-- import font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="report-card">
+
+            <div class="person-report">
+
+                <div class="person-img">
+
+                    <img src="./images/image-jeremy.png" alt="icon-jeremy">
+                </div>
+
+                <div class="person">
+                    <p class="report-for">Report for</p>
+                    <p class="name">Jeremy Robson</p>
+                </div>
+
+            </div>
+
+            <div class="timeframes">
+                <p class="timeframe">Daily</p>
+                <p class="timeframe active">Weekly</p>
+                <p class="timeframe">Monthly</p>
+            </div>
+
+        </div>
+
+        <div class="card work card-background">
+
+            <div class="tracking">
+
+                <div class="item-tracked">
+                    <p class="title"></p>
+
+
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                </div>
+                <div class="hours-tracked">
+                    <p class="hours"></p>
+                    <p class="past-timeframe-hours"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card play card-background">
+            <div class="tracking">
+
+                <div class="item-tracked">
+                    <p class="title"></p>
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                </div>
+                <div class="hours-tracked">
+                    <p class="hours"></p>
+                    <p class="past-timeframe-hours"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card study card-background">
+            <div class="tracking">
+
+                <div class="item-tracked">
+                    <p class="title"></p>
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                </div>
+                <div class="hours-tracked">
+                    <p class="hours"></p>
+                    <p class="past-timeframe-hours"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card exercise card-background">
+            <div class="tracking">
+
+                <div class="item-tracked">
+                    <p class="title"></p>
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                </div>
+                <div class="hours-tracked">
+                    <p class="hours"></p>
+                    <p class="past-timeframe-hours"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card social card-background">
+            <div class="tracking">
+
+                <div class="item-tracked">
+                    <p class="title"></p>
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                </div>
+                <div class="hours-tracked">
+                    <p class="hours"></p>
+                    <p class="past-timeframe-hours"></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card self-care card-background">
+            <div class="tracking">
+
+                <div class="item-tracked">
+                    <p class="title"></p>
+                    <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+                </div>
+                <div class="hours-tracked">
+                    <p class="hours"></p>
+                    <p class="past-timeframe-hours"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/ChristosDurro" target="_blank">Christos Durro</a>.
+    </div>
+</body>
+
+</html>
